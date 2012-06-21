@@ -29,6 +29,9 @@ package "libtool"
 package "bison" 
 package "subversion"
 
+# Required packages for wkhtmltopdf
+package "fontconfig"
+
 # Create deployer user
 user node[:user][:name] do
   password node[:user][:password]
